@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tehtäviä</title>
+   
+</head>
+<body>
+
+    <p id = "kello"></p>
+<input type = "text" id = "input">
+<button id = "Lähetä" onclick = "Sendtext()">Lähetä</button>
+<button id = "Tyhjennä" onclick = "cleartext()">Tyhjennä</button>
+<p id = "log"></p>
+
+ <div id = "laskin">
+    <p id = "laskinnäyttö"></p>
+    <input type = "number" id = "luku1">
+    <input type = "number" id = "luku2">
+    <button id="plus" onclick="Plus()">+</button>
+    <button id = "miinus" onclick="Miinus()">-</button>
+    <button id = "kerto" onclick="Kerto()">*</button>
+    <button id = "jako" onclick="Jako()">/</button>
+</div>
+<div id = "klikkeripeli">
+<button id ="aloita" onclick="Aloita()">Aloita</button>
+<button hidden id ="click" onclick= "Klik()">Klikkaa!</button>
+<p id = "sekuntikello"></p>
+</div>
+<script src ="script.js"></script>
+<script src ="script2.js"></script>
+<script scr ="laskin.js"></script>
+</body>
+</html>

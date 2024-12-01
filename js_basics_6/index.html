@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauppa</title>
+</head>
+<body>
+    <h1>Tervetuloa kauppaan!</h1>
+    
+    <form id="lisaaTuoteForm">
+        <label for="tuotenimi">Tuotteen nimi:</label>
+        <input type="text" id="tuotenimi" name="tuotenimi">
+        <label for="hinta">Hinta:</label>
+        <input type="number" id="hinta" name="hinta">
+        <button type="button" onclick="lisaaTuote()">Lisää tuote</button>
+    </form>
+
+    <h2>Kaupan valikoima:</h2>
+    <p id="kaupanValikoima"></p>
+    <tr>
+        <th>Tuote</th>
+        <th>Hinta</th>
+    </tr>
+    <tr>
+        <td>Muumitikkari</td>
+        <td>1€</td>
+    </tr>
+    <tr>
+        <td>Möfö</td>
+        <td>2€</td>
+    </tr>
+    <tr>
+        <td>Lounas</td>
+        <td>6€</td>
+    </tr>
+    <tr>
+        <td>Kirja</td>
+        <td>10€</td>
+    </tr>
+</table>
+
+    <h2>Ostoskori:</h2>
+    <p id="ostoskori"></p>
+    
+    <form id="ostaTuoteForm">
+        <label for="ostotuote">Ostettava tuote:</label>
+        <input type="text" id="ostotuote" name="ostotuote">
+        <button type="button" onclick="ostaTuote()">Osta</button>
+    </form>
+
+    <p id="rahat">Jäljellä olevat rahat: <span id="jalkirahat">20</span>€</p>
+
+    <script src="script.js"></script>
+
+    <p id="lemmikkiInfo"></p>
+    <input type="text" id="nimiInput" placeholder="Syötä lemmikin nimi">
+    <input type="number" id="maaraInput" placeholder="Syötä ruoan määrä">
+    <button onclick="ruoki()">Ruoki</button>
+    <button onclick="odota()">Odota</button>
+
+    <script src="script2.js"></script>
+
+
+</body>
+</html>

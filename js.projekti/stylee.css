@@ -1,0 +1,83 @@
+* {
+    padding: 0; /* Sisennyksen asetus */
+    margin: 0; /* Marginaalin asetus */
+    font-family: 'Itim', cursive; /* Fontin asetus */
+}
+
+.background {
+    background-color: #000000; /* Taustavärin asetus */
+    height: 150vh; /* Korkeuden asetus*/
+    padding-top: 1px; /* Sisennyksen yläosa */
+}
+
+.title {
+    color: rgb(230, 71, 71); /* Otsikon väri  */
+    text-align: center; /* Tekstin kohdistus  */
+    font-size: 40px; /* Otsikon fonttikoko  */
+    margin-top: 10%; /* Ylämarginaalin asetus  */
+}
+
+.display {
+    color: rgb(255, 255, 255); /* Tekstin väri  */
+    font-size: 25px; /* Tekstin fonttikoko  */
+    text-align: center; /* Tekstin kohdistus  */
+    margin-top: 1em; /* Ylämarginaalin asetus  */
+    margin-bottom: 1em; /* Alamarginaalin asetus  */
+}
+
+.hide {
+    display: none; /* Piilottaa elementin */
+}
+
+.container {
+    margin: 0 auto; /* Marginaalin asetus  */
+    display: grid; /* Näytön tyyli */
+    grid-template-columns: 33% 33% 33%; /* Ruudukon sarakkeiden jakautuminen */
+    grid-template-rows: 33% 33% 33%; /* Ruudukon rivien jakautuminen */
+    max-width: 300px; /* Maksimileveys  */
+}
+
+.tile {
+    border: 1px solid rgb(190, 17, 17); /* Reunaviivan asetus  */
+    min-width: 100px; /* Minimikorkeus  */
+    min-height: 100px; /* Minimileveys */
+    display: flex; /* Elementin asettelu  */
+    justify-content: center; /* Sisällön kohdistus  */
+    align-items: center; /* Sisällön kohdistus  */
+    font-size: 40px; /* Tekstin fonttikoko */
+    cursor: pointer; /* Kohdistimen asetus  */
+}
+
+.playerX {
+    color: #bc0bbc; /* Pelaajan X väri  */
+}
+
+.playerO {
+    color: #e77000; /* Pelaajan O väri */
+}
+
+.controls {
+    display: flex; /* Näytön tyyli */
+    flex-direction: row; /* Joustava suunta */
+    justify-content: center; /* Sisällön kohdistus  */
+    align-items: center; /* Kohdistaa kohteet  */
+    margin-top: 1em; /* Ylämarginaalin asetus  */
+}
+
+.controls button {
+    color: rgb(0, 0, 0); /* Painikkeen tekstin väri  */
+    padding: 8px; /* Täytteen asetus */
+    border-radius: 8px; /* Reunojen kaarevuus  */
+    border: none; /* Ei reunaviivaa */
+    font-size: 20px; /* Tekstin fonttikoko */
+    margin-left: 1em; /* Vasemman marginaalin asetus  */
+    cursor: pointer; /* Kohdistimen asetus  */
+}
+
+.restart {
+    background-color: #498AFB; /* nollaus painikkeen taustaväri */
+}
+
+#reset {
+    background-color: #FF3860; /* Nollauspainikkeen taustaväri */
+}
